@@ -6,7 +6,7 @@
 </p>
 
 ## Features
-
+:: expr cant have ? or # or $vars
 * Simple to include, just copy & paste!
 * Audio
     * Intuitive macro interface
