@@ -10,6 +10,7 @@
 * Supports all basic matrix operations
 * Generates expressions instead of FOR loops
 * Allows calculations in a single SET /A
+* No external exes, contained within a single batch file
 
 ## Usage
  expr cant have ? or # or $vars, char limit
