@@ -37,4 +37,4 @@ SET /A "%$expr%"
 Visit the documentation [here](doc/README.md)!
  
 ## Examples
-Look at the examples [here](ex)!
+Look at the examples [here](ex)! To run them, copy ```daikon.bat``` [here](src/daikon.bat) into the same directory.
