@@ -4,14 +4,14 @@
 2. Call ```daikon``` with respect to that directory with the function needed.
 3. Important : expressions cannot use variable names containing ? or #. Furthermore, ```daikon``` uses internal variables starting with $. It is recommended to not use variables starting with $ to avoid being overwritten. Finally, be aware of the line limit and variable limit in Batch. If the code fails unexpectedly, try splitting up the lines or expressions.
 
-## Matrix Notation
+## Functions
 
 Matrixes are represented through m by n notation, where m are rows and n is columns. Given a matrix `z`, ```daikon``` defines ```z[m]```, ```z[n]```, and ```z[y.x]``` where y and x represent the indices of the specific element.
 
 ---
 
 ```
-:CREATE_PRINT <m> <n> <space>
+CREATE_PRINT <m> <n> <space>
 ```
 
 Defines a macro in the form ```print[m.n]``` which can be used to print a matrix in that form. Windows 10+ only. Subsitute ```$o``` with the name of your matrix. For example
@@ -29,7 +29,7 @@ CALL DAIKON CREATE_PRINT %a[m]% %a[n]% 8
 ---
 
 ```
-:SET_IDENTITY_MATRIX <var> <d>
+SET_IDENTITY_MATRIX <var> <d>
 ```
 
 Creates an identity matrix with ```d``` dimensions
@@ -40,7 +40,7 @@ Creates an identity matrix with ```d``` dimensions
 ---
 
 ```
-:SET_CONST_MATRIX <var> <m> <n> <c>
+SET_CONST_MATRIX <var> <m> <n> <c>
 ```
 
 Creates an ```m``` by ```n``` matrix filled **c**
@@ -53,7 +53,7 @@ Creates an ```m``` by ```n``` matrix filled **c**
 ---
 
 ```
-:SET_MATRIX <var> <matrix>
+SET_MATRIX <var> <matrix>
 ```
 
 Creates a matrix with the contents of ```matrix```. For example
@@ -70,7 +70,7 @@ CALL DAIKON SET_MATRIX points "%matrix%"
 ---
 
 ```
-:GEN_EXPR <operations>
+GEN_EXPR <operations>
 ```
 
 Generates an expression and returns it in the variable ```$expr```. See below for more details
