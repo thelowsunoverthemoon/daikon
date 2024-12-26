@@ -1,7 +1,7 @@
 ## How to Use
 
 1. Copy ```daikon.bat``` into your specified directory
-2. Call ```daikon``` with respect to that directory with the function needed. For example, if it was in the same directory
+2. Call ```daikon``` with respect to that directory with the function needed.
 3. Important : expressions cannot use variable names containing ? or #. Furthermore, ```daikon``` uses internal variables starting with $. It is recommended to not use variables starting with $ to avoid being overwritten. Finally, be aware of the line limit and variable limit in Batch. If the code fails unexpectedly, try splitting up the lines or expressions.
 
 ## Matrix Notation
